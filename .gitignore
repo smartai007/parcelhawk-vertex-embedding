@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+
+# Build
+dist/
+
+# Environment and secrets (never commit credentials)
+.env
+.env.local
+.env.*.local
+*.pem
+
+# Service account keys (keep keys out of repo)
+keys/
+*-credentials.json
+*-key.json
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~

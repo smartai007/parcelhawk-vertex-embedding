@@ -1,0 +1,24 @@
+{
+  "name": "parcel-embedding",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "backfill": "node --experimental-vm-modules dist/backfill-embeddings.js",
+    "build": "tsc",
+    "backfill:ts": "tsx src/backfill-embeddings.ts"
+  },
+  "dependencies": {
+    "@google-cloud/aiplatform": "^3.9.0",
+    "drizzle-orm": "^0.36.0",
+    "pg": "^8.13.0",
+    "pgvector": "^0.2.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/pg": "^8.11.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
