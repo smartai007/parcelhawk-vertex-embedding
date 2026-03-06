@@ -41,6 +41,7 @@ async function sleep(ms: number): Promise<void> {
 /**
  * Get a single embedding for text. Retries on rate limit / transient errors.
  */
+
 export async function getEmbedding(text: string): Promise<number[]> {
   const truncated = text.slice(0, 8000);
   const endpoint = getEndpoint();
